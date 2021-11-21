@@ -1,0 +1,20 @@
+{
+  "version": 2,
+  "dgSpecHash": "Bu4mE1yDvAMy9p9vhEi+REvlPC+2rPwirht9KWS62fT4UgU2c/QecMTLywIDcoyIHf9uir2Lg06+nCxRsJ64cQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\cafarovr\\source\\repos\\IdentityServer4\\Client_1\\Client_1.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\cafarovr\\.nuget\\packages\\identitymodel\\5.2.0\\identitymodel.5.2.0.nupkg.sha512",
+    "C:\\Users\\cafarovr\\.nuget\\packages\\microsoft.aspnetcore.authentication.openidconnect\\5.0.12\\microsoft.aspnetcore.authentication.openidconnect.5.0.12.nupkg.sha512",
+    "C:\\Users\\cafarovr\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
+    "C:\\Users\\cafarovr\\.nuget\\packages\\microsoft.identitymodel.jsonwebtokens\\6.7.1\\microsoft.identitymodel.jsonwebtokens.6.7.1.nupkg.sha512",
+    "C:\\Users\\cafarovr\\.nuget\\packages\\microsoft.identitymodel.logging\\6.7.1\\microsoft.identitymodel.logging.6.7.1.nupkg.sha512",
+    "C:\\Users\\cafarovr\\.nuget\\packages\\microsoft.identitymodel.protocols\\6.7.1\\microsoft.identitymodel.protocols.6.7.1.nupkg.sha512",
+    "C:\\Users\\cafarovr\\.nuget\\packages\\microsoft.identitymodel.protocols.openidconnect\\6.7.1\\microsoft.identitymodel.protocols.openidconnect.6.7.1.nupkg.sha512",
+    "C:\\Users\\cafarovr\\.nuget\\packages\\microsoft.identitymodel.tokens\\6.7.1\\microsoft.identitymodel.tokens.6.7.1.nupkg.sha512",
+    "C:\\Users\\cafarovr\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
+    "C:\\Users\\cafarovr\\.nuget\\packages\\system.identitymodel.tokens.jwt\\6.7.1\\system.identitymodel.tokens.jwt.6.7.1.nupkg.sha512",
+    "C:\\Users\\cafarovr\\.nuget\\packages\\system.security.cryptography.cng\\4.5.0\\system.security.cryptography.cng.4.5.0.nupkg.sha512"
+  ],
+  "logs": []
+}

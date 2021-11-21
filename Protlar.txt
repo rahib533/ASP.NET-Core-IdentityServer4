@@ -1,0 +1,5 @@
+IdentityServer -> https://localhost:5001
+Client_1 -> https://localhost:5003
+Client_2 -> https://localhost:5005
+API_1 -> https://localhost:5007
+API_2 -> https://localhost:5009
