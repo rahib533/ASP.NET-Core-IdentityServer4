@@ -47,7 +47,6 @@ C:\Users\cafarovr\source\repos\IdentityServer4\IdentityServer4_Base\bin\Debug\ne
 C:\Users\cafarovr\source\repos\IdentityServer4\IdentityServer4_Base\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
 C:\Users\cafarovr\source\repos\IdentityServer4\IdentityServer4_Base\bin\Debug\net5.0\Newtonsoft.Json.dll
 C:\Users\cafarovr\source\repos\IdentityServer4\IdentityServer4_Base\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
-C:\Users\cafarovr\source\repos\IdentityServer4\IdentityServer4_Base\obj\Debug\net5.0\IdentityServer4_Base.csprojAssemblyReference.cache
 C:\Users\cafarovr\source\repos\IdentityServer4\IdentityServer4_Base\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 C:\Users\cafarovr\source\repos\IdentityServer4\IdentityServer4_Base\obj\Debug\net5.0\Razor\Views\Account\AccessDenied.cshtml.g.cs
 C:\Users\cafarovr\source\repos\IdentityServer4\IdentityServer4_Base\obj\Debug\net5.0\Razor\Views\Account\LoggedOut.cshtml.g.cs

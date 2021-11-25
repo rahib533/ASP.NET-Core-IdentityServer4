@@ -56,11 +56,18 @@ namespace IdentityServer4_Base
                 new Client()
                 {
                     ClientId = "client1-MVC",
+                    RequirePkce = false,
                     ClientName = "Client 1 MVC app tetbiqi",
                     ClientSecrets = new[]{new Secret("secret".Sha256())},
                     AllowedGrantTypes = GrantTypes.Hybrid,
-                    RedirectUris = new List<string>{ "https://localhost:5003/sign-oidc" },
-                    AllowedScopes = {IdentityServerConstants.StandardScopes.OpenId, IdentityServerConstants.StandardScopes.Profile}
+                    RedirectUris = new List<string>{ "https://localhost:5003/signin-oidc" },
+                    PostLogoutRedirectUris = new List<string>{ "https://localhost:5003/signout-callback-oidc" },
+                    AllowedScopes = {IdentityServerConstants.StandardScopes.OpenId, IdentityServerConstants.StandardScopes.Profile, "api1.read", IdentityServerConstants.StandardScopes.OfflineAccess },
+                    AccessTokenLifetime = 60,
+                    AllowOfflineAccess = true,
+                    RefreshTokenUsage = TokenUsage.ReUse,
+                    RefreshTokenExpiration = TokenExpiration.Absolute,
+                    AbsoluteRefreshTokenLifetime = 3000
                 }
             };
         }

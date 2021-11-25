@@ -35,6 +35,10 @@ namespace Client_1
                 options.ClientId = "client1-MVC";
                 options.ClientSecret = "secret";
                 options.ResponseType = "code id_token";
+                options.GetClaimsFromUserInfoEndpoint = true;
+                options.SaveTokens = true;
+                options.Scope.Add("api1.read");
+                options.Scope.Add("offline_access");
             });
         }
 
@@ -55,7 +59,7 @@ namespace Client_1
             app.UseStaticFiles();
 
             app.UseRouting();
-
+            app.UseAuthentication();
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
