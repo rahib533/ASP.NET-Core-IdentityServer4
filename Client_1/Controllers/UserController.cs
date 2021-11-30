@@ -64,5 +64,16 @@ namespace Client_1.Controllers
 
             return RedirectToAction("Index");
         }
+
+        [Authorize(Roles = "admin")]
+        public IActionResult AdminPage()
+        {
+            return View();
+        }
+        [Authorize(Roles = "user")]
+        public IActionResult UserPage()
+        {
+            return View();
+        }
     }
 }

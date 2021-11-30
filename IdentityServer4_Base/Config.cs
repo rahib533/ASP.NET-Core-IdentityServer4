@@ -62,12 +62,13 @@ namespace IdentityServer4_Base
                     AllowedGrantTypes = GrantTypes.Hybrid,
                     RedirectUris = new List<string>{ "https://localhost:5003/signin-oidc" },
                     PostLogoutRedirectUris = new List<string>{ "https://localhost:5003/signout-callback-oidc" },
-                    AllowedScopes = {IdentityServerConstants.StandardScopes.OpenId, IdentityServerConstants.StandardScopes.Profile, "api1.read", IdentityServerConstants.StandardScopes.OfflineAccess },
+                    AllowedScopes = {IdentityServerConstants.StandardScopes.OpenId, IdentityServerConstants.StandardScopes.Profile, "api1.read", IdentityServerConstants.StandardScopes.OfflineAccess, "CountryAndCity", "Roles"},
                     AccessTokenLifetime = 60,
                     AllowOfflineAccess = true,
                     RefreshTokenUsage = TokenUsage.ReUse,
                     RefreshTokenExpiration = TokenExpiration.Absolute,
-                    AbsoluteRefreshTokenLifetime = 3000
+                    AbsoluteRefreshTokenLifetime = 3000,
+                    RequireConsent = true
                 }
             };
         }
@@ -77,7 +78,9 @@ namespace IdentityServer4_Base
             return new List<IdentityResource>()
             {
                 new IdentityResources.OpenId(),
-                new IdentityResources.Profile()
+                new IdentityResources.Profile(),
+                new IdentityResource(){Name = "CountryAndCity", DisplayName = "Country and city", Description = "İstifadəçinin ölkə və şəhər bilgiləri", UserClaims = new []{ "country","city" } },
+                new IdentityResource(){Name = "Roles", DisplayName = "Roles", Description = "İstifadəçi rolları", UserClaims = new []{"role"}}
             };
         }
 
@@ -87,11 +90,17 @@ namespace IdentityServer4_Base
             {
                 new TestUser{SubjectId = "1", Username = "rahibjafar", Password = "password", Claims = new List<Claim>(){
                     new Claim("given_name","Rahib"),
-                    new Claim("family_name","Jafarov")
+                    new Claim("family_name","Jafarov"),
+                    new Claim("country","Azerbaijan"),
+                    new Claim("city","Saatli"),
+                    new Claim("role","admin")
                 } },
                 new TestUser{SubjectId = "2", Username = "testuser", Password = "password", Claims = new List<Claim>(){
                     new Claim("given_name","Test"),
-                    new Claim("family_name","User")
+                    new Claim("family_name","User"),
+                    new Claim("country","Azerbaijan"),
+                    new Claim("city","Baku"),
+                    new Claim("role","user")
                 } }
             };
         }
