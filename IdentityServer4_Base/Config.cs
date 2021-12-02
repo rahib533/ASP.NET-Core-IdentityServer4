@@ -69,6 +69,7 @@ namespace IdentityServer4_Base
                     RefreshTokenExpiration = TokenExpiration.Absolute,
                     AbsoluteRefreshTokenLifetime = 3000
 <<<<<<< HEAD
+<<<<<<< HEAD
                 },
                 new Client()
                 {
@@ -85,6 +86,8 @@ namespace IdentityServer4_Base
                     RefreshTokenUsage = TokenUsage.ReUse,
                     RefreshTokenExpiration = TokenExpiration.Absolute,
                     AbsoluteRefreshTokenLifetime = 3000
+=======
+>>>>>>> parent of c741ab1 (role base auth)
 =======
 >>>>>>> parent of c741ab1 (role base auth)
                 }
