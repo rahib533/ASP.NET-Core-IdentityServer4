@@ -49,9 +49,5 @@ C:\Users\cafarovr\source\repos\IdentityServer4\Client_1\bin\Debug\net5.0\Microso
 C:\Users\cafarovr\source\repos\IdentityServer4\Client_1\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
 C:\Users\cafarovr\source\repos\IdentityServer4\Client_1\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
 C:\Users\cafarovr\source\repos\IdentityServer4\Client_1\obj\Debug\net5.0\Razor\Views\User\Index.cshtml.g.cs
-<<<<<<< HEAD
-=======
 C:\Users\cafarovr\source\repos\IdentityServer4\Client_1\obj\Debug\net5.0\Razor\Views\User\AdminPage.cshtml.g.cs
 C:\Users\cafarovr\source\repos\IdentityServer4\Client_1\obj\Debug\net5.0\Razor\Views\User\UserPage.cshtml.g.cs
-C:\Users\cafarovr\source\repos\IdentityServer4\Client_1\obj\Debug\net5.0\Razor\Views\Home\AccessDenied.cshtml.g.cs
->>>>>>> e182333

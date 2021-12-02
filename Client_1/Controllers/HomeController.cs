@@ -33,11 +33,5 @@ namespace Client_1.Controllers
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
-
-        public IActionResult AccessDenied(string returnUrl)
-        {
-            ViewBag.url = returnUrl;
-            return View();
-        }
     }
 }
