@@ -24,6 +24,22 @@ namespace Client_2
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
+            services.AddAuthentication(options =>
+            {
+                options.DefaultScheme = "Cookies";
+                options.DefaultChallengeScheme = "oidc";
+
+            }).AddCookie("Cookies").AddOpenIdConnect("oidc", options => {
+                options.SignInScheme = "Cookies";
+                options.Authority = "https://localhost:5001";
+                options.ClientId = "client2-MVC";
+                options.ClientSecret = "secret";
+                options.ResponseType = "code id_token";
+                options.GetClaimsFromUserInfoEndpoint = true;
+                options.SaveTokens = true;
+                options.Scope.Add("api1.read");
+                options.Scope.Add("offline_access");
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

@@ -68,6 +68,22 @@ namespace IdentityServer4_Base
                     RefreshTokenUsage = TokenUsage.ReUse,
                     RefreshTokenExpiration = TokenExpiration.Absolute,
                     AbsoluteRefreshTokenLifetime = 3000
+                },
+                new Client()
+                {
+                    ClientId = "client2-MVC",
+                    RequirePkce = false,
+                    ClientName = "Client 2 MVC app tetbiqi",
+                    ClientSecrets = new[]{new Secret("secret".Sha256())},
+                    AllowedGrantTypes = GrantTypes.Hybrid,
+                    RedirectUris = new List<string>{ "https://localhost:5005/signin-oidc" },
+                    PostLogoutRedirectUris = new List<string>{ "https://localhost:5005/signout-callback-oidc" },
+                    AllowedScopes = {IdentityServerConstants.StandardScopes.OpenId, IdentityServerConstants.StandardScopes.Profile, "api1.read", IdentityServerConstants.StandardScopes.OfflineAccess },
+                    AccessTokenLifetime = 60,
+                    AllowOfflineAccess = true,
+                    RefreshTokenUsage = TokenUsage.ReUse,
+                    RefreshTokenExpiration = TokenExpiration.Absolute,
+                    AbsoluteRefreshTokenLifetime = 3000
                 }
             };
         }
