@@ -51,7 +51,7 @@ namespace IdentityServer4_Base
                     ClientName = "Client 2 app tetbiqi",
                     ClientSecrets = new[]{new Secret("secret".Sha256())},
                     AllowedGrantTypes = GrantTypes.ClientCredentials,
-                    AllowedScopes = {"api2.read"}
+                    AllowedScopes = {"api2.read", "api1.read" }
                 },
                 new Client()
                 {
@@ -62,6 +62,23 @@ namespace IdentityServer4_Base
                     AllowedGrantTypes = GrantTypes.Hybrid,
                     RedirectUris = new List<string>{ "https://localhost:5003/signin-oidc" },
                     PostLogoutRedirectUris = new List<string>{ "https://localhost:5003/signout-callback-oidc" },
+                    AllowedScopes = {IdentityServerConstants.StandardScopes.OpenId, IdentityServerConstants.StandardScopes.Profile, "api1.read", IdentityServerConstants.StandardScopes.OfflineAccess, "CountryAndCity", "Roles"},
+                    AccessTokenLifetime = 60,
+                    AllowOfflineAccess = true,
+                    RefreshTokenUsage = TokenUsage.ReUse,
+                    RefreshTokenExpiration = TokenExpiration.Absolute,
+                    AbsoluteRefreshTokenLifetime = 3000,
+                    RequireConsent = true
+                },
+                new Client()
+                {
+                    ClientId = "client2-MVC",
+                    RequirePkce = false,
+                    ClientName = "Client 2 MVC app tetbiqi",
+                    ClientSecrets = new[]{new Secret("secret".Sha256())},
+                    AllowedGrantTypes = GrantTypes.Hybrid,
+                    RedirectUris = new List<string>{ "https://localhost:5005/signin-oidc" },
+                    PostLogoutRedirectUris = new List<string>{ "https://localhost:5005/signout-callback-oidc" },
                     AllowedScopes = {IdentityServerConstants.StandardScopes.OpenId, IdentityServerConstants.StandardScopes.Profile, "api1.read", IdentityServerConstants.StandardScopes.OfflineAccess, "CountryAndCity", "Roles"},
                     AccessTokenLifetime = 60,
                     AllowOfflineAccess = true,

@@ -38,3 +38,13 @@ C:\Users\cafarovr\source\repos\IdentityServer4\Client_2\obj\Debug\net5.0\ref\Cli
 C:\Users\cafarovr\source\repos\IdentityServer4\Client_2\obj\Debug\net5.0\Client_2.pdb
 C:\Users\cafarovr\source\repos\IdentityServer4\Client_2\obj\Debug\net5.0\Client_2.genruntimeconfig.cache
 C:\Users\cafarovr\source\repos\IdentityServer4\Client_2\obj\Debug\net5.0\Client_2.csproj.CopyComplete
+C:\Users\cafarovr\source\repos\IdentityServer4\Client_2\bin\Debug\net5.0\IdentityModel.dll
+C:\Users\cafarovr\source\repos\IdentityServer4\Client_2\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.OpenIdConnect.dll
+C:\Users\cafarovr\source\repos\IdentityServer4\Client_2\bin\Debug\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\cafarovr\source\repos\IdentityServer4\Client_2\bin\Debug\net5.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\cafarovr\source\repos\IdentityServer4\Client_2\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\cafarovr\source\repos\IdentityServer4\Client_2\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\cafarovr\source\repos\IdentityServer4\Client_2\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\cafarovr\source\repos\IdentityServer4\Client_2\bin\Debug\net5.0\Newtonsoft.Json.dll
+C:\Users\cafarovr\source\repos\IdentityServer4\Client_2\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\cafarovr\source\repos\IdentityServer4\Client_2\obj\Debug\net5.0\Razor\Views\Products\Index.cshtml.g.cs
