@@ -29,7 +29,9 @@ namespace Client_1
                 options.DefaultScheme = "Cookies";
                 options.DefaultChallengeScheme = "oidc";
 
-            }).AddCookie("Cookies").AddOpenIdConnect("oidc", options=> {
+            }).AddCookie("Cookies", opts => {
+                opts.AccessDeniedPath = "/Home/AccessDenied";
+            }).AddOpenIdConnect("oidc", options=> {
                 options.SignInScheme = "Cookies";
                 options.Authority = "https://localhost:5001";
                 options.ClientId = "client1-MVC";

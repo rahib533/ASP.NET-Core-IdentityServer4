@@ -47,5 +47,8 @@ C:\Users\cafarovr\source\repos\IdentityServer4\Client_2\bin\Debug\net5.0\Microso
 C:\Users\cafarovr\source\repos\IdentityServer4\Client_2\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
 C:\Users\cafarovr\source\repos\IdentityServer4\Client_2\bin\Debug\net5.0\Newtonsoft.Json.dll
 C:\Users\cafarovr\source\repos\IdentityServer4\Client_2\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
+<<<<<<< HEAD
 C:\Users\cafarovr\source\repos\IdentityServer4\Client_2\obj\Debug\net5.0\Razor\Views\Home\GetUser.cshtml.g.cs
+=======
+>>>>>>> e182333
 C:\Users\cafarovr\source\repos\IdentityServer4\Client_2\obj\Debug\net5.0\Razor\Views\Products\Index.cshtml.g.cs
