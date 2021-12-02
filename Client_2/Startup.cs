@@ -41,8 +41,7 @@ namespace Client_2
                 options.SaveTokens = true;
                 options.Scope.Add("api1.read");
                 options.Scope.Add("offline_access");
-<<<<<<< HEAD
-=======
+
                 options.Scope.Add("CountryAndCity");
                 options.Scope.Add("Roles");
                 options.ClaimActions.MapUniqueJsonKey("country", "country");
@@ -53,7 +52,6 @@ namespace Client_2
                 {
                     RoleClaimType = "role"
                 };
->>>>>>> e182333
             });
         }
 

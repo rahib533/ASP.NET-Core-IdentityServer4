@@ -67,14 +67,8 @@ namespace IdentityServer4_Base
                     AllowOfflineAccess = true,
                     RefreshTokenUsage = TokenUsage.ReUse,
                     RefreshTokenExpiration = TokenExpiration.Absolute,
-<<<<<<< HEAD
-                    AbsoluteRefreshTokenLifetime = 3000
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
                     AbsoluteRefreshTokenLifetime = 3000,
                     RequireConsent = true
->>>>>>> e182333
                 },
                 new Client()
                 {
@@ -85,25 +79,14 @@ namespace IdentityServer4_Base
                     AllowedGrantTypes = GrantTypes.Hybrid,
                     RedirectUris = new List<string>{ "https://localhost:5005/signin-oidc" },
                     PostLogoutRedirectUris = new List<string>{ "https://localhost:5005/signout-callback-oidc" },
-<<<<<<< HEAD
-                    AllowedScopes = {IdentityServerConstants.StandardScopes.OpenId, IdentityServerConstants.StandardScopes.Profile, "api1.read", IdentityServerConstants.StandardScopes.OfflineAccess },
-=======
+
                     AllowedScopes = {IdentityServerConstants.StandardScopes.OpenId, IdentityServerConstants.StandardScopes.Profile, "api1.read", IdentityServerConstants.StandardScopes.OfflineAccess, "CountryAndCity", "Roles"},
->>>>>>> e182333
                     AccessTokenLifetime = 60,
                     AllowOfflineAccess = true,
                     RefreshTokenUsage = TokenUsage.ReUse,
                     RefreshTokenExpiration = TokenExpiration.Absolute,
-<<<<<<< HEAD
-                    AbsoluteRefreshTokenLifetime = 3000
-=======
->>>>>>> parent of c741ab1 (role base auth)
-=======
->>>>>>> parent of c741ab1 (role base auth)
-=======
                     AbsoluteRefreshTokenLifetime = 3000,
                     RequireConsent = true
->>>>>>> e182333
                 }
             };
         }
