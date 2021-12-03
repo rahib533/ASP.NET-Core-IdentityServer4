@@ -9,7 +9,6 @@ C:\Users\cafarovr\source\repos\IdentityServer4\Client_1\bin\Debug\net5.0\ref\Cli
 C:\Users\cafarovr\source\repos\IdentityServer4\Client_1\bin\Debug\net5.0\Client_1.pdb
 C:\Users\cafarovr\source\repos\IdentityServer4\Client_1\bin\Debug\net5.0\Client_1.Views.dll
 C:\Users\cafarovr\source\repos\IdentityServer4\Client_1\bin\Debug\net5.0\Client_1.Views.pdb
-C:\Users\cafarovr\source\repos\IdentityServer4\Client_1\obj\Debug\net5.0\Client_1.csprojAssemblyReference.cache
 C:\Users\cafarovr\source\repos\IdentityServer4\Client_1\obj\Debug\net5.0\Client_1.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\cafarovr\source\repos\IdentityServer4\Client_1\obj\Debug\net5.0\Client_1.AssemblyInfoInputs.cache
 C:\Users\cafarovr\source\repos\IdentityServer4\Client_1\obj\Debug\net5.0\Client_1.AssemblyInfo.cs

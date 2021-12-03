@@ -1,3 +1,4 @@
+using Client_2.Services;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -25,6 +26,9 @@ namespace Client_2
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddHttpContextAccessor();
+            services.AddScoped<IApiResourcesHttpClient, ApiResourcesHttpClient>();
+
             services.AddAuthentication(options =>
             {
                 options.DefaultScheme = "Cookies";

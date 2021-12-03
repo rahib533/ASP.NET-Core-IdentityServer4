@@ -11,7 +11,6 @@ C:\Users\cafarovr\source\repos\IdentityServer4\API_1\bin\Debug\net5.0\Microsoft.
 C:\Users\cafarovr\source\repos\IdentityServer4\API_1\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
 C:\Users\cafarovr\source\repos\IdentityServer4\API_1\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\cafarovr\source\repos\IdentityServer4\API_1\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
-C:\Users\cafarovr\source\repos\IdentityServer4\API_1\obj\Debug\net5.0\API_1.csprojAssemblyReference.cache
 C:\Users\cafarovr\source\repos\IdentityServer4\API_1\obj\Debug\net5.0\API_1.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\cafarovr\source\repos\IdentityServer4\API_1\obj\Debug\net5.0\API_1.AssemblyInfoInputs.cache
 C:\Users\cafarovr\source\repos\IdentityServer4\API_1\obj\Debug\net5.0\API_1.AssemblyInfo.cs

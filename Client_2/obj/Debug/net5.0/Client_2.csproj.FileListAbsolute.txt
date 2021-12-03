@@ -46,6 +46,6 @@ C:\Users\cafarovr\source\repos\IdentityServer4\Client_2\bin\Debug\net5.0\Microso
 C:\Users\cafarovr\source\repos\IdentityServer4\Client_2\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
 C:\Users\cafarovr\source\repos\IdentityServer4\Client_2\bin\Debug\net5.0\Newtonsoft.Json.dll
 C:\Users\cafarovr\source\repos\IdentityServer4\Client_2\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
-C:\Users\cafarovr\source\repos\IdentityServer4\Client_2\obj\Debug\net5.0\Client_2.csprojAssemblyReference.cache
 C:\Users\cafarovr\source\repos\IdentityServer4\Client_2\obj\Debug\net5.0\Razor\Views\Home\GetUser.cshtml.g.cs
 C:\Users\cafarovr\source\repos\IdentityServer4\Client_2\obj\Debug\net5.0\Razor\Views\Products\Index.cshtml.g.cs
+C:\Users\cafarovr\source\repos\IdentityServer4\Client_2\obj\Debug\net5.0\Client_2.csprojAssemblyReference.cache
