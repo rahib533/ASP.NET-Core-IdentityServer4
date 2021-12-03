@@ -33,3 +33,4 @@ C:\Users\cafarovr\source\repos\IdentityServer4\API_2\bin\Debug\net5.0\Microsoft.
 C:\Users\cafarovr\source\repos\IdentityServer4\API_2\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 C:\Users\cafarovr\source\repos\IdentityServer4\API_2\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
 C:\Users\cafarovr\source\repos\IdentityServer4\API_2\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\cafarovr\source\repos\IdentityServer4\API_2\obj\Debug\net5.0\API_2.csprojAssemblyReference.cache
