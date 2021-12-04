@@ -1,6 +1,10 @@
+using IdentityServer4_Base.Models;
+using IdentityServer4_Base.Repositories;
+using IdentityServer4_Base.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -22,7 +26,19 @@ namespace IdentityServer4_Base
 
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddIdentityServer().AddInMemoryApiResources(Config.GetApiResources()).AddInMemoryApiScopes(Config.GetApiScopes()).AddInMemoryClients(Config.GetClients()).AddInMemoryIdentityResources(Config.GetIdentityResources()).AddTestUsers(Config.GetUsers().ToList()).AddDeveloperSigningCredential();
+            services.AddScoped<ICustomUserRepository,CustomUserRepository>();
+            services.AddDbContext<CustomDbContext>(options=> {
+                options.UseSqlServer(Configuration.GetConnectionString("CustomConnectionString"));
+            });
+
+            services.AddIdentityServer()
+                .AddInMemoryApiResources(Config.GetApiResources())
+                .AddInMemoryApiScopes(Config.GetApiScopes())
+                .AddInMemoryClients(Config.GetClients())
+                .AddInMemoryIdentityResources(Config.GetIdentityResources())
+                //.AddTestUsers(Config.GetUsers().ToList())
+                .AddDeveloperSigningCredential()
+                .AddProfileService<CustomProfileService>();
             
             services.AddControllersWithViews();
         }
