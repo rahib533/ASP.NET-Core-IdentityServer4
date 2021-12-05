@@ -62,7 +62,7 @@ namespace IdentityServer4_Base
                     AllowedGrantTypes = GrantTypes.Hybrid,
                     RedirectUris = new List<string>{ "https://localhost:5003/signin-oidc" },
                     PostLogoutRedirectUris = new List<string>{ "https://localhost:5003/signout-callback-oidc" },
-                    AllowedScopes = {IdentityServerConstants.StandardScopes.OpenId, IdentityServerConstants.StandardScopes.Profile, "api1.read", IdentityServerConstants.StandardScopes.OfflineAccess, "CountryAndCity", "Roles"},
+                    AllowedScopes = { IdentityServerConstants.StandardScopes.Email, IdentityServerConstants.StandardScopes.OpenId, IdentityServerConstants.StandardScopes.Profile, "api1.read", IdentityServerConstants.StandardScopes.OfflineAccess, "CountryAndCity", "Roles"},
                     AccessTokenLifetime = 60,
                     AllowOfflineAccess = true,
                     RefreshTokenUsage = TokenUsage.ReUse,
@@ -86,6 +86,17 @@ namespace IdentityServer4_Base
                     RefreshTokenExpiration = TokenExpiration.Absolute,
                     AbsoluteRefreshTokenLifetime = 3000,
                     RequireConsent = false
+                },
+                new Client()
+                {
+                    ClientId = "js-client",
+                    RequireClientSecret = false,
+                    AllowedGrantTypes = GrantTypes.Code,
+                    ClientName = "Js Client (Angular)",
+                    AllowedScopes = { IdentityServerConstants.StandardScopes.Email, IdentityServerConstants.StandardScopes.OpenId, IdentityServerConstants.StandardScopes.Profile, "api1.read", IdentityServerConstants.StandardScopes.OfflineAccess, "CountryAndCity", "Roles"},
+                    RedirectUris = {"http://localhost:4200/callback"},
+                    AllowedCorsOrigins = { "http://localhost:4200" },
+                    PostLogoutRedirectUris = { "http://localhost:4200" }
                 }
             };
         }
@@ -94,6 +105,7 @@ namespace IdentityServer4_Base
         {
             return new List<IdentityResource>()
             {
+                new IdentityResources.Email(),
                 new IdentityResources.OpenId(),
                 new IdentityResources.Profile(),
                 new IdentityResource(){Name = "CountryAndCity", DisplayName = "Country and city", Description = "İstifadəçinin ölkə və şəhər bilgiləri", UserClaims = new []{ "country","city" } },

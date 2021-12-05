@@ -45,13 +45,15 @@ namespace Client_1
                 options.Scope.Add("offline_access");
                 options.Scope.Add("CountryAndCity");
                 options.Scope.Add("Roles");
+                options.Scope.Add("email");
                 options.ClaimActions.MapUniqueJsonKey("country", "country");
                 options.ClaimActions.MapUniqueJsonKey("city", "city");
                 options.ClaimActions.MapUniqueJsonKey("role", "role");
 
                 options.TokenValidationParameters = new TokenValidationParameters
                 {
-                    RoleClaimType = "role"
+                    RoleClaimType = "role",
+                    NameClaimType = "name"
                 };
             });
         }
