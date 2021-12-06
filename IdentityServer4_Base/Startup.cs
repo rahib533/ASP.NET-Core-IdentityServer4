@@ -11,6 +11,7 @@ using Microsoft.Extensions.Hosting;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System.Threading.Tasks;
 
 namespace IdentityServer4_Base
@@ -31,11 +32,21 @@ namespace IdentityServer4_Base
                 options.UseSqlServer(Configuration.GetConnectionString("CustomConnectionString"));
             });
 
+            var assemblyName = typeof(Startup).GetTypeInfo().Assembly.GetName().Name;
+
             services.AddIdentityServer()
-                .AddInMemoryApiResources(Config.GetApiResources())
-                .AddInMemoryApiScopes(Config.GetApiScopes())
-                .AddInMemoryClients(Config.GetClients())
-                .AddInMemoryIdentityResources(Config.GetIdentityResources())
+                .AddConfigurationStore(options =>
+                {
+                    options.ConfigureDbContext = c => c.UseSqlServer(Configuration.GetConnectionString("CustomConnectionString"), sqlOptions => sqlOptions.MigrationsAssembly(assemblyName));
+                })
+                .AddOperationalStore(options =>
+                {
+                    options.ConfigureDbContext = c => c.UseSqlServer(Configuration.GetConnectionString("CustomConnectionString"), sqlOptions => sqlOptions.MigrationsAssembly(assemblyName));
+                })
+                //.AddInMemoryApiResources(Config.GetApiResources())
+                //.AddInMemoryApiScopes(Config.GetApiScopes())
+                //.AddInMemoryClients(Config.GetClients())
+                //.AddInMemoryIdentityResources(Config.GetIdentityResources())
                 //.AddTestUsers(Config.GetUsers().ToList())
                 .AddDeveloperSigningCredential()
                 .AddProfileService<CustomProfileService>();

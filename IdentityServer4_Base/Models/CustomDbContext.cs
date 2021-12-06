@@ -8,7 +8,7 @@ namespace IdentityServer4_Base.Models
 {
     public class CustomDbContext : DbContext
     {
-        public CustomDbContext(DbContextOptions dbContextOptions) : base(dbContextOptions)
+        public CustomDbContext(DbContextOptions<CustomDbContext> dbContextOptions) : base(dbContextOptions)
         {
 
         }
