@@ -29,33 +29,36 @@ namespace Client_1
             services.AddAuthentication(options =>
             {
                 options.DefaultScheme = "Cookies";
-                options.DefaultChallengeScheme = "oidc";
+                //options.DefaultChallengeScheme = "oidc";
 
-            }).AddCookie("Cookies", opts => {
+            }).AddCookie("Cookies", opts =>
+            {
+                opts.LoginPath = "/Login/Index";
                 opts.AccessDeniedPath = "/Home/AccessDenied";
-            }).AddOpenIdConnect("oidc", options=> {
-                options.SignInScheme = "Cookies";
-                options.Authority = "https://localhost:5001";
-                options.ClientId = "client1-MVC";
-                options.ClientSecret = "secret";
-                options.ResponseType = "code id_token";
-                options.GetClaimsFromUserInfoEndpoint = true;
-                options.SaveTokens = true;
-                options.Scope.Add("api1.read");
-                options.Scope.Add("offline_access");
-                options.Scope.Add("CountryAndCity");
-                options.Scope.Add("Roles");
-                options.Scope.Add("email");
-                options.ClaimActions.MapUniqueJsonKey("country", "country");
-                options.ClaimActions.MapUniqueJsonKey("city", "city");
-                options.ClaimActions.MapUniqueJsonKey("role", "role");
-
-                options.TokenValidationParameters = new TokenValidationParameters
-                {
-                    RoleClaimType = "role",
-                    NameClaimType = "name"
-                };
             });
+            //.AddOpenIdConnect("oidc", options=> {
+            //    options.SignInScheme = "Cookies";
+            //    options.Authority = "https://localhost:5001";
+            //    options.ClientId = "client1-MVC";
+            //    options.ClientSecret = "secret";
+            //    options.ResponseType = "code id_token";
+            //    options.GetClaimsFromUserInfoEndpoint = true;
+            //    options.SaveTokens = true;
+            //    options.Scope.Add("api1.read");
+            //    options.Scope.Add("offline_access");
+            //    options.Scope.Add("CountryAndCity");
+            //    options.Scope.Add("Roles");
+            //    options.Scope.Add("email");
+            //    options.ClaimActions.MapUniqueJsonKey("country", "country");
+            //    options.ClaimActions.MapUniqueJsonKey("city", "city");
+            //    options.ClaimActions.MapUniqueJsonKey("role", "role");
+
+            //    options.TokenValidationParameters = new TokenValidationParameters
+            //    {
+            //        RoleClaimType = "role",
+            //        NameClaimType = "name"
+            //    };
+            //});
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

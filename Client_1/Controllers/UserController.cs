@@ -26,10 +26,11 @@ namespace Client_1.Controllers
             return View();
         }
 
-        public async Task LogOut()
+        public async Task<IActionResult> LogOut()
         {
             await HttpContext.SignOutAsync("Cookies");
-            await HttpContext.SignOutAsync("oidc");
+            return RedirectToAction("Index", "Home");
+            //await HttpContext.SignOutAsync("oidc");
         }
 
         public async Task<IActionResult> GetRefreshToken()

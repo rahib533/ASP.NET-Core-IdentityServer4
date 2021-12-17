@@ -1,6 +1,6 @@
 ﻿@using Microsoft.AspNetCore.Authentication
 
-<h1> Welcome</h1>
+<h1> Welcome @User.Identity.Name</h1>
 <h3>Datas of Claim</h3>
 <a class="btn btn-danger" asp-action="LogOut" asp-controller="User">Log out</a>
 <br /><br /><br />
