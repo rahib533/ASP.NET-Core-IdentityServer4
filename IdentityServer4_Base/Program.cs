@@ -17,13 +17,13 @@ namespace IdentityServer4_Base
         public static void Main(string[] args)
         {
             var host = CreateHostBuilder(args).Build();
-            /*using (var serviceScope = host.Services.CreateScope())
+            using (var serviceScope = host.Services.CreateScope())
             {
                 var services = serviceScope.ServiceProvider;
                 var context = services.GetRequiredService<ConfigurationDbContext>();
 
                 IdentityServerSeedData.Seed(context);
-            }*/
+            }
             host.Run();
         }
 

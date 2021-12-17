@@ -35,18 +35,18 @@ namespace IdentityServer4_Base
             var assemblyName = typeof(Startup).GetTypeInfo().Assembly.GetName().Name;
 
             services.AddIdentityServer()
-                /*.AddConfigurationStore(options =>
+                .AddConfigurationStore(options =>
                 {
                     options.ConfigureDbContext = c => c.UseSqlServer(Configuration.GetConnectionString("CustomConnectionString"), sqlOptions => sqlOptions.MigrationsAssembly(assemblyName));
                 })
                 .AddOperationalStore(options =>
                 {
                     options.ConfigureDbContext = c => c.UseSqlServer(Configuration.GetConnectionString("CustomConnectionString"), sqlOptions => sqlOptions.MigrationsAssembly(assemblyName));
-                })*/
-                .AddInMemoryApiResources(Config.GetApiResources())
-                .AddInMemoryApiScopes(Config.GetApiScopes())
-                .AddInMemoryClients(Config.GetClients())
-                .AddInMemoryIdentityResources(Config.GetIdentityResources())
+                })
+                //.AddInMemoryApiResources(Config.GetApiResources())
+                //.AddInMemoryApiScopes(Config.GetApiScopes())
+                //.AddInMemoryClients(Config.GetClients())
+                //.AddInMemoryIdentityResources(Config.GetIdentityResources())
                 //.AddTestUsers(Config.GetUsers().ToList())
                 .AddDeveloperSigningCredential()
                 .AddProfileService<CustomProfileService>()

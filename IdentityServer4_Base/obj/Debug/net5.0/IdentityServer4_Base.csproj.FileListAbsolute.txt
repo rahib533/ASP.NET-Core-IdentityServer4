@@ -91,3 +91,4 @@ C:\Users\cafarovr\source\repos\IdentityServer4\IdentityServer4_Base\bin\Debug\ne
 C:\Users\cafarovr\source\repos\IdentityServer4\IdentityServer4_Base\bin\Debug\net5.0\AutoMapper.dll
 C:\Users\cafarovr\source\repos\IdentityServer4\IdentityServer4_Base\bin\Debug\net5.0\IdentityServer4.EntityFramework.dll
 C:\Users\cafarovr\source\repos\IdentityServer4\IdentityServer4_Base\bin\Debug\net5.0\IdentityServer4.EntityFramework.Storage.dll
+C:\Users\cafarovr\source\repos\IdentityServer4\IdentityServer4_Base\obj\Debug\net5.0\IdentityServer4_Base.csprojAssemblyReference.cache
